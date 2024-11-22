@@ -21,7 +21,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Navigation Links (Hidden on mobile) */}
-                <div className="hidden md:flex space-x-8">
+                <div className="hidden md:flex space-x-8 text-sm">
                     <Link href="/" className="p-3 text-gray-600 hover:text-gray-900 dark:text-slate-400">
                         Accueil
                     </Link>
