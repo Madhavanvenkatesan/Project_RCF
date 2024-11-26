@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import HamburgerMenu from "../Menuburger/page";
+import HamburgerMenu from "../HamburgerMenu/page";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
