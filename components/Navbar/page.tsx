@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import HamburgerMenu from "../menuburger/page";
+import HamburgerMenu from "../Menuburger/page";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,11 +13,11 @@ export default function Navbar() {
     const closeMenu = () => setIsMenuOpen(false);
 
     return (
-        <header>
-            <nav className="flex justify-between items-center bg-inherit px-4 py-3">
+        <header className="w-full">
+            <nav className="flex justify-between items-center  bg-slate-100 shadow-sm">
                 {/* Logo Section */}
-                <div className="p-2">
-                    <Image src="/logo.svg" alt="Logo" width={50} height={50} />
+                <div className="py-2 px-4">
+                    <Image src="/logo.svg" alt="Logo" width={65} height={65} />
                 </div>
 
                 {/* Navigation Links (Hidden on mobile) */}
@@ -42,37 +42,38 @@ export default function Navbar() {
 
             {/* Mobile Menu (Dropdown) */}
             {isMenuOpen && (
-                <div className="md:hidden text-center bg-inherit px-4 py-3 space-y-2">
-                    <Link
-                        href="/"
-                        className="block text-gray-600 hover:text-gray-900 dark:text-slate-400"
-                        onClick={closeMenu}
-                    >
-                        Accueil
-                    </Link>
-                    <Link
-                        href="/about"
-                        className="block text-gray-600 hover:text-gray-900 dark:text-slate-400"
-                        onClick={closeMenu}
-                    >
-                        Services
-                    </Link>
-                    <Link
-                        href="/services"
-                        className="block text-gray-600 hover:text-gray-900 dark:text-slate-400"
-                        onClick={closeMenu}
-                    >
-                        À Propos
-                    </Link>
-                    <Link
-                        href="/contact"
-                        className="block text-gray-600 hover:text-gray-900 dark:text-slate-400"
-                        onClick={closeMenu}
-                    >
-                        Contact
-                    </Link>
-                </div>
-            )}
+    <div className="absolute top-12 left-0 w-full bg-inherit text-center px-4 py-3 space-y-2 z-50 md:hidden">
+        <Link
+            href="/"
+            className="block text-gray-600 hover:text-gray-900 dark:text-slate-400"
+            onClick={closeMenu}
+        >
+            Accueil
+        </Link>
+        <Link
+            href="/about"
+            className="block text-gray-600 hover:text-gray-900 dark:text-slate-400"
+            onClick={closeMenu}
+        >
+            Services
+        </Link>
+        <Link
+            href="/services"
+            className="block text-gray-600 hover:text-gray-900 dark:text-slate-400"
+            onClick={closeMenu}
+        >
+            À Propos
+        </Link>
+        <Link
+            href="/contact"
+            className="block text-gray-600 hover:text-gray-900 dark:text-slate-400"
+            onClick={closeMenu}
+        >
+            Contact
+        </Link>
+    </div>
+)}
+
         </header>
     );
 }
