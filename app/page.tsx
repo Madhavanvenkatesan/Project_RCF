@@ -18,7 +18,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col items-center bg-slate-100">
-        <h2 className="text-2xl md:text-3xl my-12">Nos Offres de Soutien</h2>
+        <h2 className="text-2xl md:text-3xl my-12">Why us</h2>
         <div className="flex flex-wrap items-center justify-center ">
 
         </div>
