@@ -3,11 +3,11 @@ import Button from "../Button/page";
 
 export default function Hero() {
     return (
-        <div className="relative flex justify-start items-center h-[75vh] rounded-br-full bg-slate-100">
+        <div className="relative flex justify-center md:justify-start items-center h-[75vh] rounded-br-full bg-slate-100">
             {/* Text Section */}
-            <div className="flex flex-col justify-center items-start h-full md:w-3/5 w-4/5 pl-20">
-                <h1 className="text-5xl font-bold text-gray-800">Welcome to My Website</h1>
-                <p className="text-lg text-gray-600 mt-4">
+            <div className="flex flex-col justify-center items-center md:items-start h-full md:w-3/5 w-4/5 md:pl-40">
+                <h1 className="text-3xl md:text-5xl font-bold text-gray-800">Welcome to My Website</h1>
+                <p className="text-md md:text-lg text-gray-600 mt-4">
                     Discover our amazing features and services
                     Discover our amazing features and services
                     Discover our amazing features and services
@@ -17,8 +17,8 @@ export default function Hero() {
                     <Button
                         label="Blog"
                         className="ml-4 border-2 border-slate-600"
-                        bgColor="bg-slate-100"
-                        hoverBgColor="hover:bg-slate-600"   
+                        bgColor="!bg-slate-100"
+                        hoverBgColor="hover:!bg-slate-600"   
                         textColor="bg-slate-800"
                         hoverTextColor="hover:text-white"
                     />

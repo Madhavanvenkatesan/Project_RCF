@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = ({
     className = '', // Default empty className
 }) => {
     return (
-        <button className={`py-1 px-4 my-4 font-bold rounded-lg ${bgColor} ${hoverBgColor} ${textColor} ${className} ${hoverTextColor}`} onClick={onClick} disabled={disabled}>
+        <button className={`py-1 px-4 my-4 font-bold text-sm rounded-lg ${bgColor} ${hoverBgColor} ${textColor} ${className} ${hoverTextColor}`} onClick={onClick} disabled={disabled}>
             {label}
         </button>
     );

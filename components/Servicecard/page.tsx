@@ -9,7 +9,7 @@ interface CardProps {
 
 const ServiceCard: React.FC<CardProps> = ({ label, imgsrc, cardinfo }) => {
     return (
-        <div className="flex flex-col items-center w-80 h-96 p-4 m-6 bg-white shadow-md rounded-lg hover:shadow-xl transition-shadow duration-300">
+        <div className="flex flex-col items-center md:w-80 h-96 p-4 m-4 md:m-6 bg-white shadow-md rounded-lg hover:shadow-xl transition-shadow duration-300">
             <div className="relative w-40 h-40 mb-4">
                 <Image
                     src={imgsrc}
